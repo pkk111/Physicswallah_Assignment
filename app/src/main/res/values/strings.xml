@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Physics Wallah</string>
+    <string name="qualification">qualification</string>
+    <string name="subject">subject</string>
+    <string name="view_more">View More</string>
+    <string name="name">name</string>
+    <string name="image_of_professor">Image of professor</string>
+</resources>
