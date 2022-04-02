@@ -3,10 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/toolbar.xml" value="0.1105" />
         <entry key="app/src/main/res/layout/main_activity.xml" value="0.19519927536231885" />
         <entry key="app/src/main/res/layout/main_fragment.xml" value="0.19519927536231885" />
         <entry key="app/src/main/res/layout/professor_display_itemcard.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/professors_list_fragment.xml" value="0.19519927536231885" />
+        <entry key="app/src/main/res/layout/professors_list_fragment.xml" value="0.1" />
       </map>
     </option>
   </component>

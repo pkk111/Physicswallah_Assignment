@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="8dp"
     app:cardCornerRadius="8dp"
-    app:cardElevation="16dp"
-    android:layout_margin="8dp">
+    app:cardElevation="16dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -20,6 +20,9 @@
             android:layout_marginStart="@dimen/margin_16"
             android:layout_marginTop="@dimen/margin_16"
             android:text="@string/name"
+            android:textSize="18sp"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,6 +33,7 @@
             android:layout_marginStart="@dimen/margin_16"
             android:layout_marginTop="@dimen/margin_16"
             android:text="@string/subject"
+            android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/name" />
 
@@ -39,26 +43,39 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_16"
             android:text="@string/qualification"
+            android:textColor="@color/black"
             app:layout_constraintStart_toEndOf="@+id/subject"
             app:layout_constraintTop_toTopOf="@+id/subject" />
 
-        <Button
+        <androidx.cardview.widget.CardView
             android:id="@+id/view_more"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_16"
-            android:layout_marginTop="@dimen/margin_16"
-            android:text="@string/view_more"
+            android:layout_marginVertical="@dimen/margin_16"
+            app:cardBackgroundColor="@color/design_default_color_primary_dark"
+            app:cardCornerRadius="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/subject" />
+            app:layout_constraintTop_toBottomOf="@+id/subject">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:text="@string/view_more"
+                android:textStyle="bold"
+                android:textColor="@color/design_default_color_on_primary" />
+        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="8dp"
-            app:contentPadding="-2dp"
             android:layout_marginVertical="@dimen/margin_16"
             android:layout_marginEnd="@dimen/margin_16"
+            app:cardCornerRadius="8dp"
+            app:contentPadding="-2dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent">
